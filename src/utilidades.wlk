@@ -6,3 +6,13 @@ object posicionAleatoria {
     0.randomUpTo(game.height()).truncate(0)
   )
 }
+object posicionHorizontal {
+  var velocidadEnEjeX = 5
+
+  method avanza(){
+    self.x() += velocidadEnEjeX
+
+  }
+  
+
+}

@@ -67,3 +67,17 @@ object barrilDeCombustible {
     game.removeTickEvent("cambiarCombustible")
   }
 }
+
+object revista {
+  var property  position = posicionHorizontal.avanza()
+
+  method nombre() = "RevistaRandom"
+  method esReciclable() = true
+  method impactoEnLaHuellaDeCarbono() = 0
+  method image() = "revista.png"
+  
+  method colisionarCon(capy) {
+    capy.recolectarBasura(self)
+  }
+
+}
